@@ -1,0 +1,14 @@
+/home/prem/Desktop/dotnet/app/sample-app/bin/Debug/netcoreapp2.1/sample-app.deps.json
+/home/prem/Desktop/dotnet/app/sample-app/bin/Debug/netcoreapp2.1/sample-app.runtimeconfig.json
+/home/prem/Desktop/dotnet/app/sample-app/bin/Debug/netcoreapp2.1/sample-app.runtimeconfig.dev.json
+/home/prem/Desktop/dotnet/app/sample-app/bin/Debug/netcoreapp2.1/sample-app.dll
+/home/prem/Desktop/dotnet/app/sample-app/bin/Debug/netcoreapp2.1/sample-app.pdb
+/home/prem/Desktop/dotnet/app/sample-app/obj/Debug/netcoreapp2.1/sample-app.csprojAssemblyReference.cache
+/home/prem/Desktop/dotnet/app/sample-app/obj/Debug/netcoreapp2.1/sample-app.csproj.CoreCompileInputs.cache
+/home/prem/Desktop/dotnet/app/sample-app/obj/Debug/netcoreapp2.1/sample-app.RazorAssemblyInfo.cache
+/home/prem/Desktop/dotnet/app/sample-app/obj/Debug/netcoreapp2.1/sample-app.RazorAssemblyInfo.cs
+/home/prem/Desktop/dotnet/app/sample-app/obj/Debug/netcoreapp2.1/sample-app.AssemblyInfoInputs.cache
+/home/prem/Desktop/dotnet/app/sample-app/obj/Debug/netcoreapp2.1/sample-app.AssemblyInfo.cs
+/home/prem/Desktop/dotnet/app/sample-app/obj/Debug/netcoreapp2.1/sample-app.RazorTargetAssemblyInfo.cache
+/home/prem/Desktop/dotnet/app/sample-app/obj/Debug/netcoreapp2.1/sample-app.dll
+/home/prem/Desktop/dotnet/app/sample-app/obj/Debug/netcoreapp2.1/sample-app.pdb
