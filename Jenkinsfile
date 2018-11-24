@@ -16,8 +16,6 @@ node{
         sh 'docker push premhashmap/reactapp:latest'
     }
     stage('Rolling Update'){
-        kubernetesDeploy configs: '/home/centos/.kube/config', kubeConfig: [path: ''], kubeconfigId: 'kubeconfig-1', secretName: '', ssh: [sshCredentialsId: '*', sshServer: ''], textCredentials: [certificateAuthorityData: '', clientCertificateData: '', clientKeyData: '', serverUrl: 'https://']
-        sh 'kubectl get pods -oname |grep react |xargs kubectl delete'
+       sh 'kubectl --kubeconfig /root/.kube/config get pods -oname |grep react |xargs kubectl --kubeconfig /root/.kube/config delete'
     }
 }
-
