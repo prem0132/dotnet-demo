@@ -7,5 +7,6 @@ node{
         sh 'npm run build'
     }
     stage('docker build'){
+        sh 'docker build -t premhashmap/reactapp:latest .'
     }
 }
