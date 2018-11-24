@@ -6,4 +6,6 @@ node{
         sh 'npm install'
         sh 'npm run build'
     }
+    stage('docker build'){
+    }
 }
