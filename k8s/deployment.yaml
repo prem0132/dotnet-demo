@@ -11,5 +11,6 @@ spec:
       containers:
       - name: react
         image: premhashmap/reactapp:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80

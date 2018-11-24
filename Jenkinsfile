@@ -15,4 +15,7 @@ node{
         }
         sh 'docker push premhashmap/reactapp:latest'
     }
+    stage('Rolling Update'){
+        sh 'kubectl get pods -oname |grep react |xargs kubectl delete'
+    }
 }
