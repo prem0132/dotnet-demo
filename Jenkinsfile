@@ -16,6 +16,6 @@ node{
         sh 'docker push premhashmap/reactapp:latest'
     }
     stage('Rolling Update'){
-       sh 'kubectl --kubeconfig /root/.kube/config get pods -oname |grep react |xargs kubectl --kubeconfig /root/.kube/config delete'
+       sh 'kubectl --kubeconfig /home/centos/.kube/config get pods -oname |grep react |xargs kubectl --kubeconfig /home/centos/.kube/config delete'
     }
 }
