@@ -1,0 +1,15 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+      name: react
+spec:
+  template:
+    metadata:
+      labels:
+        name: react
+    spec:
+      containers:
+      - name: react
+        image: premhashmap/reactapp:latest
+        ports:
+        - containerPort: 80
