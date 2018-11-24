@@ -9,4 +9,10 @@ node{
     stage('docker build'){
         sh 'docker build -t premhashmap/reactapp:latest .'
     }
+    stage('docker push'){
+        withCredentials([string(credentialsId: 'dockerhubPWD', variable: 'dockerpwd')]) {
+            sh 'docker login -u premhashmap -p ${dockerpwd}'
+        }
+        sh 'docker push premhashmap/reactapp:latest'
+    }
 }
