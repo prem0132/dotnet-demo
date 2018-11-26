@@ -7,7 +7,9 @@ pipeline{
             }
        stages{     
             stage('scm checkout'){
+                steps{
                 git credentialsId: 'gitcreds', url: 'https://github.com/prem0132/dotnet-demo.git'
+            }
             }
             stage('install packages'){
                 steps{
@@ -16,7 +18,9 @@ pipeline{
                 }
             }
             stage('docker build'){
+                steps{
                 sh 'docker build -t premhashmap/reactapp:latest .'
+            }
             }
             stage('docker push'){
                 steps{
@@ -27,7 +31,9 @@ pipeline{
                 }
             }
             stage('Rolling Update'){
+                steps{
             sh 'kubectl --kubeconfig /var/lib/jenkins/jobs/config get pods -oname |grep react |xargs kubectl --kubeconfig /var/lib/jenkins/jobs/config delete'
+            }
             }
        }
     }
