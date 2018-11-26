@@ -1,6 +1,4 @@
-node
-  {
-      pipeline{
+pipeline{
         agent {
           docker {
             image 'library/node'
@@ -29,4 +27,3 @@ node
             }
        }
     }
-  }
