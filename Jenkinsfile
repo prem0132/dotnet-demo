@@ -16,6 +16,6 @@ node{
         sh 'docker push premhashmap/reactapp:latest'
     }
     stage('Rolling Update'){
-       sh 'kubectl --kubeconfig /var/lib/jenkins/jobs/config get pods -oname |grep react |xargs kubectl --kubeconfig /var/lib/jenkins/jobs/config delete'
+       sh 'sudo kubectl --kubeconfig /var/lib/jenkins/jobs/config get pods -oname |grep react |xargs kubectl --kubeconfig /var/lib/jenkins/jobs/config delete'
     }
 }
